@@ -16,7 +16,7 @@ class AppColumn extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        BigText(text: text, size: Dimensions.font26,),
+        BigText(text: text, size: Dimensions.font20,),
         SizedBox(height: Dimensions.height10),
         Row(
           children: [
@@ -32,7 +32,7 @@ class AppColumn extends StatelessWidget {
             SmallText(text:"comments"),
           ],
         ),
-        SizedBox(height: Dimensions.height20),
+        SizedBox(height: Dimensions.height10),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

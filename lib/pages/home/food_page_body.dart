@@ -66,7 +66,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
         //Poular text
-        SizedBox(height: Dimensions.height30),
+        SizedBox(height: Dimensions.height20),
         Container(
           margin: EdgeInsets.only(left: Dimensions.width30),
           child: Row(
@@ -185,7 +185,6 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       matrix = Matrix4.diagonal3Values(1, currScale, 1)..setTranslationRaw(0, _height*(1-_scaleFactor)/2, 1);
     }
 
-
     return Transform(
       transform: matrix,
       child: Stack(
@@ -227,7 +226,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 ]
               ),
               child: Container(
-                padding: EdgeInsets.only(top: Dimensions.height15, left: 15, right: 15),
+                padding: EdgeInsets.only(top: Dimensions.height15, left: Dimensions.width15, right: Dimensions.width15),
                 child: AppColumn(text: "Vietnam side",),
               ),
 
